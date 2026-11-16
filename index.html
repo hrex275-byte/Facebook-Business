@@ -9,34 +9,30 @@
 body{background:#f0f2f5;color:#1c1e21;}
 .hidden{display:none !important;}
 
-/* === LOGIN SCREEN === */
 .login-screen{display:block;text-align:center;margin-top:120px;padding:20px;}
 .fb-logo{font-size:60px;color:#1877f2;font-weight:700;letter-spacing:-2px;margin-bottom:16px;}
 .login-screen h2{font-size:24px;margin-bottom:24px;color:#1c1e21;font-weight:600;}
-.input-field{width:100%;max-width:360px;padding:14px 16px;margin:8px auto;border:1px solid #dddfe2;border-radius:6px;font-size:17px;display:block;outline:none;transition:border 0.2s;}
+.input-field{width:100%;max-width:360px;padding:14px 16px;margin:8px auto;border:1px solid #dddfe2;border-radius:6px;font-size:17px;display:block;outline:none;}
 .input-field:focus{border-color:#1877f2;}
-.login-btn{width:100%;max-width:360px;padding:14px;background:#1877f2;color:#ffffff;border:none;border-radius:6px;font-size:17px;font-weight:600;cursor:pointer;margin-top:12px;transition:background 0.2s;}
+.login-btn{width:100%;max-width:360px;padding:14px;background:#1877f2;color:#fff;border:none;border-radius:6px;font-size:17px;font-weight:600;cursor:pointer;margin-top:12px;}
 .login-btn:hover{background:#166fe5;}
 
-/* === FACE SCAN SCREEN === */
-.face-scan-screen{position:fixed;top:0;left:0;width:100%;height:100%;background:#ffffff;z-index:1000;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;text-align:center;}
+.face-scan-screen{position:fixed;top:0;left:0;width:100%;height:100%;background:#fff;z-index:1000;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;text-align:center;}
 .scan-circle{width:260px;height:260px;border-radius:50%;border:3px solid #1877f2;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;margin-bottom:24px;background:#000;}
 .scan-circle video{width:100%;height:100%;object-fit:cover;transform:scaleX(-1);}
-.scan-line{position:absolute;width:100%;height:4px;background:linear-gradient(transparent, #1877f2, transparent);animation:scan 2s ease-in-out infinite;z-index:10;}
+.scan-line{position:absolute;width:100%;height:4px;background:linear-gradient(transparent,#1877f2,transparent);animation:scan 2s ease-in-out infinite;z-index:10;}
 @keyframes scan{0%{top:0;}50%{top:calc(100% - 4px);}100%{top:0;}}
 .face-scan-screen h2{font-size:22px;font-weight:600;color:#1c1e21;margin-bottom:8px;}
 .face-scan-screen p{font-size:16px;color:#65676b;margin-bottom:6px;}
 .scan-status{color:#1877f2;font-weight:600;margin-top:12px;font-size:18px;}
 
-/* === LOADING SCREEN === */
-.loading-screen{position:fixed;top:0;left:0;width:100%;height:100%;background:#ffffff;z-index:1001;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;text-align:center;}
+.loading-screen{position:fixed;top:0;left:0;width:100%;height:100%;background:#fff;z-index:1001;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;text-align:center;}
 .loading-spinner{width:70px;height:70px;border:4px solid #e0e0e0;border-top-color:#1877f2;border-radius:50%;animation:spin 1s linear infinite;margin-bottom:24px;}
 @keyframes spin{to{transform:rotate(360deg);}}
 .loading-screen h2{font-size:22px;font-weight:600;color:#1c1e21;margin-bottom:8px;}
 .loading-screen p{font-size:16px;color:#65676b;margin-bottom:6px;}
 .loading-time{font-size:16px;font-weight:600;color:#1877f2;margin-top:8px;}
 
-/* === PROFILE PAGE === */
 .cover-container{width:100%;height:340px;background:#dddfe2;position:relative;overflow:hidden;}
 .cover-photo{width:100%;height:100%;object-fit:cover;}
 
@@ -45,18 +41,18 @@ body{background:#f0f2f5;color:#1c1e21;}
 .meta-verified-badge{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;background:#1877f2;border-radius:50%;color:#fff;font-size:12px;font-weight:bold;}
 
 .top-icons{position:absolute;top:12px;right:16px;display:flex;gap:10px;align-items:center;z-index:10;}
-.top-icon{width:36px;height:36px;background:#f0f2f5;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background 0.2s;}
+.top-icon{width:36px;height:36px;background:#f0f2f5;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;}
 .top-icon:hover{background:#e4e6eb;}
 .top-icon svg{width:20px;height:20px;fill:#65676b;}
 
-.camera-btn-cover{position:absolute;bottom:16px;right:16px;background:#ffffff;border:none;border-radius:50%;width:36px;height:36px;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 1px 2px rgba(0,0,0,0.1);transition:background 0.2s;}
+.camera-btn-cover{position:absolute;bottom:16px;right:16px;background:#fff;border:none;border-radius:50%;width:36px;height:36px;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 1px 2px rgba(0,0,0,0.1);}
 .camera-btn-cover:hover{background:#f0f2f5;}
 .camera-btn-cover svg{width:20px;height:20px;fill:#65676b;}
 
-.profile-section{background:#ffffff;padding:0 16px 24px;position:relative;}
-.profile-header{display:flex;align-items:flex-end;gap:12px;margin-bottom:16px;position:relative;flex-wrap:wrap;}
+.profile-section{background:#fff;padding:0 16px 24px;position:relative;}
+.profile-header{display:flex;align-items:flex-end;gap:12px;margin-bottom:16px;flex-wrap:wrap;}
 .profile-pic-wrap{position:relative;margin-top:-60px;z-index:5;}
-.profile-pic{width:120px;height:120px;border-radius:50%;border:4px solid #ffffff;object-fit:cover;background:#dddfe2;box-shadow:0 1px 2px rgba(0,0,0,0.1);}
+.profile-pic{width:120px;height:120px;border-radius:50%;border:4px solid #fff;object-fit:cover;background:#dddfe2;box-shadow:0 1px 2px rgba(0,0,0,0.1);}
 
 .profile-info{flex:1;min-width:200px;padding-bottom:8px;}
 .name-row{display:flex;align-items:center;gap:6px;flex-wrap:wrap;}
@@ -68,28 +64,13 @@ body{background:#f0f2f5;color:#1c1e21;}
 .info-row{display:flex;align-items:center;gap:8px;margin-bottom:16px;font-size:15px;color:#050505;padding:4px 0;}
 .info-row svg{width:20px;height:20px;fill:#65676b;flex-shrink:0;}
 
-/* ===== BUTTONS ===== */
 .button-row{display:flex;gap:12px;margin:16px 0;flex-wrap:nowrap;}
-.btn-dashboard, .btn-create{
-  flex:1;
-  padding:8px 16px;
-  background:#1877f2;
-  color:#fff;
-  border:none;
-  border-radius:6px;
-  font-size:15px;
-  font-weight:600;
-  cursor:pointer;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  min-height:36px;
-  transition:background 0.2s;
-}
+.btn-dashboard, .btn-create{flex:1;padding:8px 16px;border-radius:6px;font-size:15px;font-weight:600;cursor:pointer;min-height:36px;}
+.btn-dashboard{background:#1877f2;color:#fff;border:none;}
 .btn-dashboard:hover{background:#166fe5;}
-.btn-create{background:#e4e6eb;color:#050505;}
+.btn-create{background:#e4e6eb;color:#050505;border:none;display:flex;align-items:center;justify-content:center;gap:6px;}
 .btn-create:hover{background:#d8dadf;}
-.btn-create svg{width:18px;height:18px;fill:#050505;margin-right:4px;}
+.btn-create svg{width:18px;height:18px;fill:#050505;}
 
 .tabs{display:flex;gap:32px;border-bottom:1px solid #e4e6eb;margin:20px 0;flex-wrap:wrap;}
 .tab{padding:12px 0;font-size:15px;font-weight:500;color:#65676b;cursor:pointer;}
@@ -106,7 +87,7 @@ body{background:#f0f2f5;color:#1c1e21;}
 <body>
 
 <script>
-// ✅ DITO MO PWEDENG PALITAN ANG MGA DETALYE
+// ✅ DITO MO PALITAN ANG MGA DETALYE
 const CONFIG = {
   coverPhotoLink: "https://i.imgur.com/FuJZpxd.jpeg",
   profilePhotoLink: "https://i.imgur.com/FuJZpxd.jpeg",
@@ -159,7 +140,6 @@ const CONFIG = {
       <div class="top-icon">
         <svg viewBox="0 0 20 20"><path d="M12 5.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM9 12a3 3 0 116 0 3 3 0 01-6 0z" fill="currentColor"/></svg>
       </div>
-      <!-- ❌ TINANGGAL YUNG TATLONG DOT SA COVER PHOTO -->
     </div>
     
     <button class="camera-btn-cover">
@@ -187,9 +167,7 @@ const CONFIG = {
     </div>
 
     <div class="button-row">
-      <button class="btn-dashboard">
-        Dashboard
-      </button>
+      <button class="btn-dashboard">Dashboard</button>
       <button class="btn-create">
         <svg viewBox="0 0 20 20"><path d="M10 5a.75.75 0 01.75.75v3.5h3.5a.75.75 0 010 1.5h-3.5v3.5a.75.75 0 01-1.5 0v-3.5h-3.5a.75.75 0 010-1.5h3.5v-3.5A.75.75 0 0110 5z" fill="currentColor"/></svg>
         Create
@@ -228,12 +206,12 @@ const CONFIG = {
 <script>
 document.getElementById('coverImg').src = CONFIG.coverPhotoLink;
 document.getElementById('profileImg').src = CONFIG.profilePhotoLink;
-document.getElementById('profileName').innerHTML = CONFIG.fullName;
+document.getElementById('profileName').textContent = CONFIG.fullName;
 document.getElementById('profileBio').innerHTML = CONFIG.profileBio;
-document.getElementById('profileLocation').innerHTML = CONFIG.location;
-document.getElementById('profileLocation2').innerHTML = CONFIG.location;
-document.getElementById('profileBirth').innerHTML = CONFIG.birthDate;
-document.getElementById('profileCity').innerHTML = CONFIG.city;
+document.getElementById('profileLocation').textContent = CONFIG.location;
+document.getElementById('profileLocation2').textContent = CONFIG.location;
+document.getElementById('profileBirth').textContent = CONFIG.birthDate;
+document.getElementById('profileCity').textContent = CONFIG.city;
 
 const loginScreen = document.getElementById('loginScreen');
 const faceScanScreen = document.getElementById('faceScanScreen');
@@ -256,14 +234,12 @@ loginButton.addEventListener('click', function(){
       cameraFeed.srcObject = stream;
       scanStatus.textContent = "Camera ready. Scanning...";
       
-      setTimeout(function() { scanStatus.textContent = "Face detected ✓"; }, 1500);
-      setTimeout(function() { scanStatus.textContent = "Verifying..."; }, 2500);
-      setTimeout(function() { scanStatus.textContent = "Verified ✓"; }, 3500);
+      setTimeout(() => scanStatus.textContent = "Face detected ✓", 1500);
+      setTimeout(() => scanStatus.textContent = "Verifying...", 2500);
+      setTimeout(() => scanStatus.textContent = "Verified ✓", 3500);
       
       setTimeout(function() {
-        if(cameraFeed.srcObject) {
-          cameraFeed.srcObject.getTracks().forEach(function(track) { track.stop(); });
-        }
+        if(cameraFeed.srcObject) cameraFeed.srcObject.getTracks().forEach(t => t.stop());
         faceScanScreen.classList.add('hidden');
         loadingScreen.classList.remove('hidden');
       }, 4500);
