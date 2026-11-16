@@ -40,15 +40,13 @@ body{background:#f0f2f5;color:#1c1e21;}
 .cover-container{width:100%;height:340px;background:#dddfe2;position:relative;overflow:hidden;}
 .cover-photo{width:100%;height:100%;object-fit:cover;}
 
-.meta-header{position:absolute;top:12px;left:16px;display:flex;align-items:center;gap:6px;z-index:10;background:rgba(255,255,255,0.9);padding:4px 10px;border-radius:20px;}
-.meta-logo-img{width:26px;height:26px;object-fit:contain;}
+.meta-header{position:absolute;top:12px;left:16px;display:flex;align-items:center;gap:7px;z-index:10;}
+.meta-logo-img{width:27px;height:27px;object-fit:contain;}
 .meta-verified-badge{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;background:#1877f2;border-radius:50%;color:#fff;font-size:12px;font-weight:bold;}
 
 .top-icons{position:absolute;top:12px;right:16px;display:flex;gap:8px;align-items:center;z-index:10;}
-.top-icon{width:36px;height:36px;background:rgba(255,255,255,0.9);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.12);}
+.top-icon{width:36px;height:36px;background:rgba(255,255,255,0.95);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.12);}
 .top-icon svg{width:20px;height:20px;fill:#65676b;}
-
-.share-note{position:absolute;bottom:16px;left:16px;background:rgba(255,255,255,0.95);color:#1c1e21;padding:7px 14px;border-radius:20px;font-size:14px;box-shadow:0 1px 3px rgba(0,0,0,0.12);font-weight:500;}
 
 .camera-btn-cover{position:absolute;bottom:16px;right:16px;background:rgba(255,255,255,0.95);border:none;border-radius:50%;width:36px;height:36px;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.12);}
 .camera-btn-cover svg{width:20px;height:20px;fill:#65676b;}
@@ -57,7 +55,6 @@ body{background:#f0f2f5;color:#1c1e21;}
 .profile-header{display:flex;align-items:flex-end;gap:12px;margin-bottom:16px;position:relative;flex-wrap:wrap;}
 .profile-pic-wrap{position:relative;margin-top:-60px;z-index:5;}
 .profile-pic{width:120px;height:120px;border-radius:50%;border:4px solid #ffffff;object-fit:cover;background:#dddfe2;box-shadow:0 1px 3px rgba(0,0,0,0.1);}
-.verified-badge-profile{position:absolute;bottom:6px;right:6px;width:24px;height:24px;background:#1877f2;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:14px;font-weight:bold;box-shadow:0 1px 3px rgba(0,0,0,0.15);}
 .camera-btn-profile{position:absolute;bottom:2px;right:2px;background:#f0f2f5;border:none;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,0.1);}
 .camera-btn-profile svg{width:14px;height:14px;fill:#65676b;}
 
@@ -148,7 +145,7 @@ const CONFIG = {
   <div class="cover-container">
     <img class="cover-photo" id="coverImg" src="" alt="Cover Photo">
     
-    <!-- Meta Infinity Logo + Verified Badge -->
+    <!-- Meta Infinity Logo + Verified Badge - WALANG BOX -->
     <div class="meta-header">
       <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta" class="meta-logo-img">
       <span class="meta-verified-badge">✓</span>
@@ -166,8 +163,6 @@ const CONFIG = {
       </div>
     </div>
     
-    <div class="share-note">+ Add to story</div>
-    
     <button class="camera-btn-cover">
       <svg viewBox="0 0 24 24"><path d="M12 15.2c1.77 0 3.2-1.43 3.2-3.2S13.77 8.8 12 8.8 8.8 10.23 8.8 12s1.43 3.2 3.2 3.2zM9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9z"/></svg>
     </button>
@@ -177,8 +172,7 @@ const CONFIG = {
     <div class="profile-header">
       <div class="profile-pic-wrap">
         <img class="profile-pic" id="profileImg" src="" alt="Profile Photo">
-        <!-- Verified Badge sa Profile Picture -->
-        <div class="verified-badge-profile">✓</div>
+        <!-- ❌ TINANGGAL VERIFIED BADGE SA PROFILE PICTURE -->
       </div>
       <div class="profile-info">
         <div class="name-row">
