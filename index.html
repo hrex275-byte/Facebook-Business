@@ -36,14 +36,9 @@ body{background:#f0f2f5;color:#1c1e21;}
 .cover-container{width:100%;height:340px;background:#dddfe2;position:relative;overflow:hidden;}
 .cover-photo{width:100%;height:100%;object-fit:cover;}
 
-.meta-header{position:absolute;top:12px;left:16px;display:flex;align-items:center;gap:8px;z-index:10;}
-.meta-logo-img{width:32px;height:32px;object-fit:contain;}
-.meta-verified-badge{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;background:#1877f2;border-radius:50%;color:#fff;font-size:12px;font-weight:bold;}
-
-.top-icons{position:absolute;top:12px;right:16px;display:flex;gap:10px;align-items:center;z-index:10;}
-.top-icon{width:36px;height:36px;background:#f0f2f5;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;}
-.top-icon:hover{background:#e4e6eb;}
-.top-icon svg{width:20px;height:20px;fill:#65676b;}
+.meta-header{position:absolute;top:15px;left:20px;display:flex;align-items:center;gap:10px;z-index:10;}
+.meta-logo-img{width:38px;height:38px;object-fit:contain;}
+.meta-verified-badge{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;background:#1877f2;border-radius:50%;color:#fff;font-size:13px;font-weight:bold;}
 
 .camera-btn-cover{position:absolute;bottom:16px;right:16px;background:#fff;border:none;border-radius:50%;width:36px;height:36px;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 1px 2px rgba(0,0,0,0.1);}
 .camera-btn-cover:hover{background:#f0f2f5;}
@@ -65,10 +60,10 @@ body{background:#f0f2f5;color:#1c1e21;}
 .info-row svg{width:20px;height:20px;fill:#65676b;flex-shrink:0;}
 
 .button-row{display:flex;gap:12px;margin:16px 0;flex-wrap:nowrap;}
-.btn-dashboard, .btn-create{flex:1;padding:8px 16px;border-radius:6px;font-size:15px;font-weight:600;cursor:pointer;min-height:36px;}
-.btn-dashboard{background:#1877f2;color:#fff;border:none;}
+.btn-dashboard, .btn-create{flex:1;padding:8px 16px;border-radius:6px;font-size:15px;font-weight:600;cursor:pointer;min-height:36px;border:none;}
+.btn-dashboard{background:#1877f2;color:#fff;}
 .btn-dashboard:hover{background:#166fe5;}
-.btn-create{background:#e4e6eb;color:#050505;border:none;display:flex;align-items:center;justify-content:center;gap:6px;}
+.btn-create{background:#e4e6eb;color:#050505;display:flex;align-items:center;justify-content:center;gap:6px;}
 .btn-create:hover{background:#d8dadf;}
 .btn-create svg{width:18px;height:18px;fill:#050505;}
 
@@ -132,14 +127,7 @@ const CONFIG = {
       <span class="meta-verified-badge">✓</span>
     </div>
     
-    <div class="top-icons">
-      <div class="top-icon">
-        <svg viewBox="0 0 20 20"><path d="M2 4h16v2H2V4zm0 5h16v2H2V9zm0 5h16v2H2v-2z" fill="currentColor"/></svg>
-      </div>
-      <div class="top-icon">
-        <svg viewBox="0 0 20 20"><path d="M12 5.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM9 12a3 3 0 116 0 3 3 0 01-6 0z" fill="currentColor"/></svg>
-      </div>
-    </div>
+    <!-- ✅ TINANGGAL LAHAT NG ICON SA TAAS KANAN -->
     
     <button class="camera-btn-cover">
       <svg viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4zm0-7c.83 0 1.5-.67 1.5-1.5S10.83 2 10 2 8.5 2.67 8.5 3.5 9.17 5 10 5zm0 10c-.83 0-1.5.67-1.5 1.5S9.17 18 10 18s1.5-.67 1.5-1.5S10.83 15 10 15z" fill="currentColor"/></svg>
